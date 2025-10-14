@@ -1,6 +1,14 @@
 import React from "react";
 
 function Home() {
+  const skills = [
+    { name: "HTML5", level: 90, color: "#e34c26" },
+    { name: "CSS3", level: 80, color: "#00bcd4" },
+    { name: "JavaScript", level: 70, color: "#f7df1e" },
+    { name: "PHP", level: 60, color: "#198754" },
+    { name: "React", level: 50, color: "#0d6efd" },
+  ];
+
   return (
     <>
       <div className="hero">
@@ -16,11 +24,11 @@ function Home() {
       {/* Container À propos / Compétences */}
       <div className="container custom-container my-5">
         <div className="row">
-          <div className="col-md-6 about">
-            <h2>À propos</h2>
+          <div className="col-md-6 about d-flex flex-column">
+            <h2 className="title-with-underline">À propos</h2>
             <img
-              className="img-about"
-              src="../public/assets/images/john-doe-about.jpg"
+              className="img-about img-fluid flex-grow-1"
+              src="/assets/images/john-doe-about.jpg"
               alt="image illustrant l'à propos"
             />
             <p>
@@ -43,8 +51,25 @@ function Home() {
             </p>
           </div>
           <div className="col-md-6 skills">
-            <h2>Compétences</h2>
-            <p>Liste de compétences...</p>
+            <h2 className="title-with-underline">Compétences</h2>
+            <div className="skills-container">
+              {skills.map((skill) => (
+                <div key={skill.name} className="skill">
+                  <p>
+                    {skill.name} {skill.level}%
+                  </p>
+                  <div className="progress">
+                    <div
+                      className="progress-bar"
+                      style={{
+                        width: `${skill.level}%`,
+                        backgroundColor: skill.color,
+                      }}
+                    ></div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
