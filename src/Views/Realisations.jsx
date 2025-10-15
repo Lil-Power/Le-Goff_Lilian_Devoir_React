@@ -1,8 +1,17 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 function Realisations() {
   return (
     <>
+      {/* Indexation de la page */}
+      <Helmet>
+        <title>Contact - John Doe</title>
+        <meta
+          name="description"
+          content="Bienvenue sur le portfolio de John Doe, développeur web full stack."
+        />
+      </Helmet>
       <img
         className="img-fluid flex-grow-1"
         src="/assets/images/banner.jpg"

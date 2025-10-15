@@ -124,6 +124,9 @@ button {
   color: white;
   text-decoration: none;
 }
+.link-footer:hover {
+  font-weight: bold;
+}
 
 .footer-img {
   width: 50px;

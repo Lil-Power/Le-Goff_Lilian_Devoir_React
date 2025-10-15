@@ -1,5 +1,6 @@
 import React from "react";
 import GithubModal from "../Views/components/GithubModal";
+import { Helmet } from "react-helmet-async";
 
 function Home() {
   const skills = [
@@ -12,6 +13,14 @@ function Home() {
 
   return (
     <>
+      {/* Indexation de la page */}
+      <Helmet>
+        <title>Accueil - John Doe</title>
+        <meta
+          name="description"
+          content="Bienvenue sur la page d'accueil de John Doe, développeur web full stack"
+        />
+      </Helmet>
       <div className="hero">
         <div className="hero-content text-center">
           <h1 className="text-white fw-bold">
