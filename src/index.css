@@ -44,6 +44,10 @@ button {
   color: white;
 }
 
+.nav-link:hover {
+  text-decoration: underline;
+}
+
 /* Home page */
 .hero {
   height: 100vh;
@@ -127,12 +131,6 @@ button {
 }
 
 /* Services page */
-.container-services {
-  border: 1px solid grey;
-  border-radius: 2%;
-  padding: 15px;
-  box-sizing: border-box;
-}
 
 .img-services {
   width: 50px;
@@ -141,8 +139,38 @@ button {
   margin-bottom: 20px;
 }
 
+/* Effet au survol des cards */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: #efefef;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
 /* Mentions page - liste déroulante */
 
 .form-mentions {
   margin: 50px 200px 50px 200px;
+}
+
+/* Realisations page */
+.portfolio-card {
+  transition: all 0.3s ease;
+  border: 1px solid #ccc;
+}
+
+.portfolio-card:hover {
+  background-color: #efefef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-card .btn-primary {
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-card .btn-primary:hover {
+  background-color: #4a9bff;
 }

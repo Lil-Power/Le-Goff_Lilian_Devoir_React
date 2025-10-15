@@ -1,9 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function Mentions() {
   return (
     <>
+      {/* noIndex de cette page */}
+      <Helmet>
+        <title>Mentions légales</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+
       <div className="text-center pt-4">
         <h1 className="fs-1 fw-bold title-with-underline mt-5">
           Mentions Légales

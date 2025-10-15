@@ -70,22 +70,22 @@ function Footer() {
           <div className="col-md-3">
             <div className="fs-4">Mes dernières réalisations</div>
             <div className="d-flex flex-column mt-2">
-              <NavLink to="#" className="link-footer">
+              <NavLink to="/realisations" className="link-footer">
                 Fresh Food
               </NavLink>
-              <NavLink to="#" className="link-footer">
+              <NavLink to="/realisations" className="link-footer">
                 Restaurant Akira
               </NavLink>
-              <NavLink to="#" className="link-footer">
+              <NavLink to="/realisations" className="link-footer">
                 Espace bien-être
               </NavLink>
-              <NavLink to="#" className="link-footer">
+              <NavLink to="/realisations" className="link-footer">
                 SEO
               </NavLink>
-              <NavLink to="#" className="link-footer">
+              <NavLink to="/realisations" className="link-footer">
                 Création d'une API
               </NavLink>
-              <NavLink to="#" className="link-footer">
+              <NavLink to="/realisations" className="link-footer">
                 Maquette d'un site
               </NavLink>
             </div>

@@ -26,24 +26,28 @@ function Contact() {
                 className="form-control mb-1"
                 type="text"
                 placeholder="Votre nom"
+                required
               />
               <br />
               <input
                 className="form-control mb-1"
                 type="email"
                 placeholder="Votre adresse email"
+                required
               />{" "}
               <br />
               <input
                 className="form-control mb-1"
                 type="tel"
                 placeholder="Votre numéro de téléphone"
+                required
               />
               <br />
               <input
                 className="form-control mb-1"
                 type="text"
                 placeholder="Sujet"
+                required
               />
               <br />
               <textarea
@@ -51,6 +55,7 @@ function Contact() {
                 name="message"
                 id="message"
                 placeholder="Votre message"
+                required
               ></textarea>
               <br />
               <input

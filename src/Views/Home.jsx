@@ -1,4 +1,5 @@
 import React from "react";
+import GithubModal from "../Views/components/GithubModal";
 
 function Home() {
   const skills = [
@@ -17,7 +18,17 @@ function Home() {
             Bonjour, je suis Lilian Le Goff
           </h1>
           <h2 className="text-white fw-bold">Développeur Web full stack</h2>
-          <button className="btn btn-danger">En savoir plus</button>
+          <button
+            type="button"
+            className="btn btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#githubModal"
+          >
+            En savoir plus
+          </button>
+
+          {/* La modale */}
+          <GithubModal />
         </div>
       </div>
 
